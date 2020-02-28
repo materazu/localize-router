@@ -70,7 +70,7 @@ export function getAppInitializer(p: ParserInitializer, parser: LocalizeParser, 
 })
 export class LocalizeRouterModule {
 
-  static forRoot(routes: Routes, config: LocalizeRouterConfig = {}): ModuleWithProviders<LocalizeRouterModule> {
+  static forRoot(routes: Routes, config: LocalizeRouterConfig = {}): ModuleWithProviders<T = any> {
     return {
       ngModule: LocalizeRouterModule,
       providers: [
@@ -104,7 +104,7 @@ export class LocalizeRouterModule {
     };
   }
 
-  static forChild(routes: Routes): ModuleWithProviders<LocalizeRouterModule> {
+  static forChild(routes: Routes): ModuleWithProviders<T = any> {
     return {
       ngModule: LocalizeRouterModule,
       providers: [
