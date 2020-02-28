@@ -104,7 +104,7 @@ export class LocalizeRouterModule {
     };
   }
 
-  static forChild(routes: Routes): ModuleWithProviders {
+  static forChild(routes: Routes): ModuleWithProviders<LocalizeRouterModule> {
     return {
       ngModule: LocalizeRouterModule,
       providers: [
